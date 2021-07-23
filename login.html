@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign in or log in to play the tournament">
+    <script src="https://kit.fontawesome.com/0a21f7e5d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="login.css" />
+    <title>Log in & Sign up</title>
+    <link rel="icon" href="img/pokeball-pokemon-svgrepo-com.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="javascript:void(0);" class="sign-in-form">
+                    <h2 class="title">Log in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Email" id="email-signin"/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="pass-signin"/>
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" id="botn-signin" />
+                    <p class="social">Or Log in with social platforms</p>
+                    <div class="social-media">
+                        <a class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p id="errorbox1" class="errorbox"></p>
+                </form>
+                <form action="javascript:void(0);" class="sign-up-form">
+                    <h2 class="title">Sign Up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" id="username-signup"/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" id="email-signup"/>
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="pass-signup"/>
+                    </div>
+                    <input type="submit" class="btn" value="Sign up" id="botn-signup"/>
+                    <p class="social">Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p id="errorbox2" class="errorbox"></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here?</h3>
+                    <p>
+                        Register right now to know more about the upcoming epic tournament
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">
+                        Sign up
+                    </button>
+                </div>
+                <img src="img/pikachu-seeklogo.com.svg" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>Already Registered?</h3>
+                    <p>
+                        Log In to know more info about the tournament
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">
+                        Log in
+                    </button>
+                </div>
+                <img src="img/squirtle-seeklogo.com.svg" class="image" alt="" />
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer-links">
+            <div class="footer-link-wrapper">
+                <div class="footer-link-items">
+                    <h2>Poketop</h2>
+                    <a href="/pokemon/index.html">Home</a>
+                    <a href="/pokemon/pokedex.html">Pokedex</a>
+                    <a href="/pokemon/login.html">Login</a>
+                    <a href="/pokemon/leaderboard.html">Leaderboard</a>
+                    <a href="/pokemon/user.html">User</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>About Us</h2>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Contact Us</h2>
+                    <a href="#">Contact</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="footer-link-items">
+                    <h2>Social Media</h2>
+                    <a href="#">Instagram</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Youtube</a>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <div class="social-media-wrap">
+                <div class="footer-logo">
+                    <a href="/" id="footer-logo">PokéTop</a>
+                </div>
+                <p class="website-rights">© Copyright 2021 PokéTop Inc. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script>
+        // TODO: Replace the following with your app's Firebase project configuration
+        // For Firebase JavaScript SDK v7.20.0 and later, `measurementId` is an optional field
+        var firebaseConfig = {
+            apiKey: "AIzaSyC7a3OWg3hEZmiyqWq9HoTyCJtzZtWXN4Q",
+            authDomain: "pokemon-8abe7.firebaseapp.com",
+            projectId: "pokemon-8abe7",
+            storageBucket: "pokemon-8abe7.appspot.com",
+            messagingSenderId: "700641191821",
+            appId: "1:700641191821:web:6a3b4ba56b87875dc87fc4",
+            measurementId: "G-ZVF4402LJY"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
