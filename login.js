@@ -56,7 +56,7 @@ firebase.auth().onAuthStateChanged((firebaseuser) => {
     console.log(firebaseuser.uid);
     console.log("before");
     wait(3000);
-    window.location = "/user.html";
+    window.location = "/pokemon/user.html";
   } else {
     console.log("not logged in");
   }
