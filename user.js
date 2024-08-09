@@ -8,12 +8,12 @@ window.onload = function () {
       usera.append(username);
     } else {
       console.log("signed out");
-      window.location = "/login.html";
+      window.location = "/pokemon/login.html";
     }
   });
 };
 const btnlogout = document.getElementById("btnlogout");
 btnlogout.addEventListener("click", (e) => {
   firebase.auth().signOut();
-  window.location = "/index.html";
+  window.location = "/pokemon/index.html";
 });
