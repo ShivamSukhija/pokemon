@@ -17,7 +17,7 @@ const getpoke = async (id) => {
     result.types[0].type.name.slice(1);
   const pokehtml = `
         <div class="img">
-            <img src="https://pokeres.bastionbot.org/images/pokemon/${result.id}.png" alt="${name}" />
+            <img src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${result.id}.svg" alt="${name}" />
         </div>
         <div class="info">
             <h3 class="name">${name}</h3>
